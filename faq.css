@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    min-height: 100vh;
+}
+
+.heading{
+    position: relative;
+    align-items: left;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+header{
+    padding: 5px 50px 5px 50px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: #7f1839;
+    height: 72px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  display: inline;
+}
+nav{
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    font-family: boyrun;
+    font-size: 26px;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 0 3rem;
+    transition: all .4s ease;
+    color: #e2d6c7;
+}
+nav a:hover{
+    transition: all .4s ease;
+    color: #b98731;
+}
+
+.logo{
+    display: block;
+    transition: all .3s ease;
+}
+.hover-animation{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;   
+    margin-top: 5.5px;
+    margin-left: 5px;
+}
+.hover-animation img{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+.hover-animation img.logo-front:hover{
+  opacity: 0;
+}
+
+.banner{
+    background-image: url(images/faq-banner-23.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    width: 100%;
+    padding: 200px 150px 30px 150px;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.banner h1{
+    font-family: 'madesunflower';
+    font-weight: 100;
+    font-size: 6em;
+    line-height: 1;
+    color: #f1eae1;
+    text-align: center;
+}
+
+
+
+.container{
+    background-image: url(images/background-5x3-50%25-06.png);
+    background-repeat: none;
+    background-size: cover;
+    padding: 110px 150px 130px 150px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion{
+    cursor: pointer;
+    background-color: transparent;
+    color: #7f1839;
+    padding: 20px 30px;
+    width: 1200px;
+    border-color: #f1eae1;
+    border-bottom-style: solid;
+    text-underline-position: below;
+    border-bottom-width: 5px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    text-align: left;
+    font-family: 'madesunflower';
+    font-size: 33px;
+    font-weight: 100;
+    letter-spacing: .02rem;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover{
+    border-bottom-color: #b98731;
+    transition: 0.3s ease-in-out;
+}
+
+.accordion:after{
+  content: '\002B';
+  color: #7f1839;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after{
+  content: "\2212";
+}
+
+.panel{
+    margin: 0 200px;
+    width: 1200px;
+    min-width: 400px;
+    display: none;
+    background-color: #f4eadc;
+    padding: 50px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.panel p{
+    font-family: domus, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    color: #7f1839;
+    margin-left: 100px;
+    line-height: 1.5;
+}
+
+
+
+.growth{
+    background-image: url(images/faq_growth-24.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 25%;
+    padding: 60px;   
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 25%;
+    padding: 60px;    
+}
+
+.col-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 60px;    
+}
+
+.row p{
+    font-family: domus, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #faf9ef;
+    text-align: center;
+}
+
+
+footer{
+    background-color: black;
+    position: relative;
+    clear: both;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-family: 'madesunflower';
+    font-weight: 100;
+    font-size: 2em;
+    color: #f2f0e8;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: #b98731;
+    font-family: domus, sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+}
+
+.social-menu{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+}
+
+.social-menu a:hover{
+    transition: all .5s ease;
+}
+
+.fa{
+    width: 50px;
+    text-decoration: none;
+    transition: .6s;
+    transition: all .5s ease;
+
+}
+
+.left{
+    margin-left: 200px;
+    text-align: left;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.center{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.right{
+    justify-content: right;
+    justify-items: flex-end;
+    align-items: right;
+    align-content: flex-end;
+    margin-right: 100px;
+}
+
+
+
+@import url("https://use.typekit.net/fyc5ang.css");
+
+@font-face{
+    font-family: 'boyrun';
+    src: url(fonts/boyrun.otf);
+}
+
+@font-face{
+    font-family: 'madesunflower';
+    src: url(fonts/MadeSunflower.otf);
+}

@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    background-color: #fff;
+}
+
+.heading{
+    position: relative;
+    align-items: left;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 70px;
+}
+
+header{
+    padding: 5px 50px 5px 50px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: #7f1839;
+    height: 72px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline;
+}
+
+nav{
+    display: flex;
+    min-width: 200px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: boyrun;
+    font-size: 26px;
+    font-weight: 100;
+    overflow: hidden;
+    padding: 0 3rem;
+    transition: all .4s ease;
+    color: #e2d6c7;
+}
+
+nav a:hover{
+    transition: all .4s ease;
+    color: #b98731;
+}
+
+.logo{
+    display: block;
+    transition: all .3s ease;
+}
+
+.hover-animation{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;   
+    margin-top: 5.5px;
+    margin-left: 5px;
+}
+
+.hover-animation img{
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+
+.hover-animation img.logo-front:hover{
+  opacity: 0;
+}
+
+
+
+
+.container{
+    background-image: url(images/recipes-black-background-09.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.row-1{
+    height: 100% auto;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-1 h1{
+    font-family: boyrun;
+    font-weight: 100;
+    font-size: 6em;
+    line-height: 1;
+    color: #f1eae1;
+    text-align: left;
+    margin: 40px 0;
+}
+
+.row-1 .col-1{
+    width: 50%;
+    margin: 100px;
+}
+
+.row-1 .col-2{
+    margin-right: 150px;
+    width: 50%;
+}
+.row-1 .col-2 h1{
+    float: left;
+    text-align: left;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+.row-1 .col-2 p{
+    font-family: domus, sans-serif;
+    font-size: 27px;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #f1eae1;
+    margin: 40px 0;
+}
+
+.row-2{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.row-2 .col-1{
+    width: 50%;
+    margin-left: 250px;
+    margin-right: 50px;
+}
+.row-2 .col-2{
+    width: 50%;
+    margin-right: 250px;
+    margin-left: 150px;
+}
+.row-2 h2{
+    font-family: 'madesunflower';
+    color: #b98731;
+    font-weight: 100;
+    font-size: 35px;    
+    margin: 25px 0;
+}
+.row-2 li{
+    font-family: boyrun;
+    color: #f1eae1;
+    font-weight: 100;
+    font-size: 26px;
+    line-height: 1.5;
+    letter-spacing: .02em;
+    margin: 10px 0;
+}
+.row-2 ul{
+    padding-left: 50px;
+}
+.row-2 p{
+    font-family: domus, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 25px 0;
+    font-size: 24px;
+    color: #f1eae1;
+}
+
+.row-3{
+    height: 150px;
+}
+
+.button-solid{
+    color: #f1eae1;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    letter-spacing: 1px;
+}
+
+.button-solid a{
+    text-decoration: none;
+    font-family: 'madesunflower';
+    font-size: 26px;
+    color: #f1eae1;
+    background-color: #b98731;
+    transition: all .4s ease;
+    padding: 13px 40px;
+}
+
+.button-solid a:hover{
+    background-color: #f1eae1;
+    color: #7f1839;
+    transition: .4s ease;
+}
+
+
+
+
+
+
+footer{
+    background-color: black;
+    position: relative;
+    clear: both;
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h2{
+    font-family: 'madesunflower';
+    font-weight: 100;
+    font-size: 2em;
+    color: #f2f0e8;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color: #b98731;
+    font-family: domus, sans-serif;
+    font-weight: 100;
+    font-size: 1.2em;
+    letter-spacing: 0.03em;
+}
+
+.social-menu{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+}
+
+.social-menu a:hover{
+    transition: all .5s ease;
+}
+
+.fa{
+    width: 50px;
+    text-decoration: none;
+    transition: .6s;
+    transition: all .5s ease;
+
+}
+
+.left{
+    margin-left: 200px;
+    text-align: left;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.center{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.right{
+    justify-content: right;
+    justify-items: flex-end;
+    align-items: right;
+    align-content: flex-end;
+    margin-right: 100px;
+}
+
+
+
+@import url("https://use.typekit.net/fyc5ang.css");
+
+@font-face{
+    font-family: 'boyrun';
+    src: url(fonts/boyrun.otf);
+}
+
+@font-face{
+    font-family: 'madesunflower';
+    src: url(fonts/MadeSunflower.otf);
+}
